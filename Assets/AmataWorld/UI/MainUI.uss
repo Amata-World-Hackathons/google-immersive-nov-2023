@@ -1,0 +1,15 @@
+#main-button {
+  transition: all 0.8s ease;
+  border: none;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  translate: -50% 0;
+  position: absolute;
+  left: 50%;
+  bottom: 12px;
+}
+
+#main-button:disabled {
+  bottom: -100%;
+}

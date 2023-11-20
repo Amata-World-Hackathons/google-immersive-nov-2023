@@ -1,0 +1,15 @@
+#action-button {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  translate: -50% 0;
+  width: 42px;
+  height: 42px;
+  transition: all 0.5s ease-in-out;
+  border-radius: 100%;
+  background-color: cyan;
+}
+
+#action-button:disabled {
+  bottom: 100%;
+}

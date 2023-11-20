@@ -1,0 +1,239 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+package amata_world.protobuf.scene_def;
+
+message Scene {
+  string id = 1;
+  repeated Layer layers = 2;
+  repeated Anchor anchors = 3;
+  repeated Event events = 4;
+
+  message Layer {
+    uint32 id = 1;
+    bool active = 2;
+    repeated Object objects = 3;
+    repeated ObjectArrangement object_arrangements = 4;
+  }
+
+  message Anchor {
+    uint32 id = 1;
+    AnchorType type = 2;
+    bool active = 3;
+  }
+
+  message AnchorType {
+    oneof type {
+      Plane plane = 1;
+      Image image = 2;
+      Geospatial geospatial = 3;
+      DeviceRelative device_relative = 4;
+    }
+
+    message DeviceRelative {
+      Transform transform = 1;
+      Alignment alignment = 2;
+
+      message Transform {
+        float offset_x = 1;
+        float offset_y = 2;
+        float offset_z = 3;
+        float euler_x = 4;
+        float euler_y = 5;
+        float euler_z = 6;
+      }
+
+      enum Alignment {
+        CAMERA_FORWARD = 0;
+        COMPASS_NORTH = 1;
+      }
+    }
+
+    message Plane {
+      SurfaceOrientation surface_orientation = 1;
+
+      oneof selection_criteria { RandomFieldOfView random_field_of_view = 2; }
+
+      enum SurfaceOrientation {
+        HORIZONTAL = 0;
+        VERTICAL = 1;
+        ANY = 2;
+      }
+
+      message RandomFieldOfView {
+        int32 x = 1;
+        int32 y = 2;
+        int32 device_movement_score_threshold = 3;
+      }
+    }
+
+    message Image {
+      string image_url = 1;
+      double physical_width = 2;
+      Overlay overlay = 3;
+      Coupling coupling = 4;
+
+      message Overlay {
+        Fit fit = 1;
+
+        oneof media {
+          string image_url = 2;
+          string video_url = 3;
+        }
+
+        enum Fit {
+          fill = 0;
+          cover = 1;
+          contain = 2;
+        }
+      }
+
+      message Coupling {
+        oneof type {
+          google.protobuf.Empty fixed = 4;
+          google.protobuf.Empty unconstrained = 5;
+        }
+      }
+    }
+
+    message Geospatial {
+      double latitude = 1;
+      double longitude = 2;
+      double altitude = 3;
+      bool uses_absolute_altitude = 4;
+      // East-Up-North frame of reference
+      float eun_euler_x = 5;
+      float eun_euler_y = 6;
+      float eun_euler_z = 7;
+      optional float spawn_range = 8;
+    }
+  }
+
+  message Event {
+    uint32 id = 1;
+    EventType type = 2;
+
+    message EventType {
+      oneof variant {
+        ToggleLayers toggle_layers = 2;
+        ShowDirections show_directions = 3;
+      }
+    }
+
+    message ToggleLayers {
+      repeated uint32 layer_ids = 1;
+      Behaviour behaviour = 2;
+
+      enum Behaviour {
+        ENABLE = 0;
+        DISABLE = 1;
+        TOGGLE = 2;
+      }
+    }
+
+    message ShowDirections {
+      double latitude = 1;
+      double longitude = 2;
+    }
+  }
+
+  message ObjectArrangement {
+    uint32 id = 1;
+    uint32 anchor_id = 2;
+    Object.ObjectType type = 3;
+  }
+
+  message Object {
+    uint32 id = 1;
+    uint32 anchor_id = 2;
+    Transform transform = 3;
+    ObjectType type = 4;
+
+    message ObjectType {
+      oneof variant {
+        Custom custom = 1;
+        ActivitySubject activity_subject = 2;
+      }
+    }
+
+    message Custom {
+      Model model = 4;
+      optional Interaction interaction = 5;
+    }
+
+    message ActivitySubject {
+      ActivityType type = 1;
+
+      message ActivityType {
+        oneof variant {
+          CryptexPuzzle cryptex_puzzle = 1;
+          MatchTheTiles match_the_tiles = 2;
+          WhackAMole whack_a_mole = 3;
+        }
+      }
+
+      message CryptexPuzzle {
+        string hint = 1;
+        string answer = 2;
+        string alphabet = 3;
+        repeated CustomGlyph custom_glyphs = 4;
+
+        message CustomGlyph {
+          string character = 1;
+          string image_url = 2;
+        }
+      }
+
+      message MatchTheTiles {
+        uint32 board_size = 1;
+        repeated TileAsset assets = 2;
+        uint32 physical_board_length_mm = 3;
+        uint32 num_assets_to_match = 4;
+
+        message TileAsset { string model_url = 1; }
+      }
+
+      message WhackAMole {}
+    }
+
+    message Model {
+      oneof data { string model_url = 1; }
+    }
+
+    message Interaction {
+      oneof type { Focus focus = 1; }
+
+      message Focus { optional uint32 event_id = 1; }
+    }
+
+    // oneof model {
+    //   string model_url = 3;
+    //   BasicShape basic_shape = 4;
+    // }
+
+    // message BasicShape {
+    //   enum Shape {
+    //     CUBE = 0;
+    //     SPHERE = 1;
+    //   }
+    // }
+
+    //   enum State {
+    //     ACTIVE = 0;
+    //     INACTIVE = 1;
+    //   }
+  }
+
+  message Transform {
+    float pos_x = 1;
+    float pos_y = 2;
+    float pos_z = 3;
+    float euler_x = 4;
+    float euler_y = 5;
+    float euler_z = 6;
+    float scale_x = 7;
+    float scale_y = 8;
+    float scale_z = 9;
+  }
+}

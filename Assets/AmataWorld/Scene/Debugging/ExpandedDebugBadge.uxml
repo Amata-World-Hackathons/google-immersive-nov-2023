@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/AmataWorld/Scene/Debugging/ExpandedDebugBadge.uss?fileID=7433441132597879392&amp;guid=ca3cfe8858d7f4f0aa9e8e112cc0ddc5&amp;type=3#ExpandedDebugBadge" />
+    <ui:ScrollView name="scroll-view">
+        <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="debug-info-text-dump" />
+    </ui:ScrollView>
+    <ui:VisualElement name="outside-scroll-view" />
+</ui:UXML>

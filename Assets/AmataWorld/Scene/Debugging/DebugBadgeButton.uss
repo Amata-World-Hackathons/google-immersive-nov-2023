@@ -1,0 +1,15 @@
+#debug-badge-button {
+  position: absolute;
+  top: 24px;
+  right: 8px;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  background-color: yellow;
+  transition: all 0.8s ease;
+}
+
+#debug-badge-button:disabled {
+  right: auto;
+  left: 100%;
+}
