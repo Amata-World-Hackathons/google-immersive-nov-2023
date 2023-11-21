@@ -16,7 +16,6 @@ namespace AmataWorld.Scene
         RaycastHit _hit;
 
         public SceneInteractable currentFocus { get; private set; }
-        public SceneInteractable currentTarget { get; private set; }
 
         int counter = 0;
 
@@ -78,16 +77,12 @@ namespace AmataWorld.Scene
                 if (currentFocus == null) return;
 
                 currentFocus = null;
-                currentTarget = null;
                 _sceneConfig.onFocusObject.Invoke(null);
-                _sceneConfig.onTargetObject.Invoke(null);
             }
             else if (interactable.canBeFocused && (currentFocus == null || currentFocus.id != interactable.id))
             {
-                currentTarget = interactable;
                 currentFocus = interactable;
                 _sceneConfig.onFocusObject.Invoke(interactable);
-                _sceneConfig.onTargetObject.Invoke(interactable);
 
                 counter = 0;
             }

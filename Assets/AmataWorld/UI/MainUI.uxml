@@ -1,4 +1,4 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/AmataWorld/UI/MainUI.uss?fileID=7433441132597879392&amp;guid=b4c26619bfab949c6a21ec49b9f72973&amp;type=3#MainUI" />
-    <ui:Button text="Button" display-tooltip-when-elided="true" enable-rich-text="true" name="main-button" style="background-color: rgb(176, 0, 255);" />
+    <ui:Button display-tooltip-when-elided="true" enable-rich-text="false" name="main-button" style="background-image: url(&apos;project://database/Assets/UnityAssetStore/Clean%20Vector%20Icons/T_1_magnifier_.png?fileID=2800000&amp;guid=4800731ef4eae344c85a8e9b24fb7278&amp;type=3#T_1_magnifier_&apos;); -unity-background-image-tint-color: rgb(255, 255, 255);" />
 </ui:UXML>

@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/AmataWorld/UI/ClaimReward.uss?fileID=7433441132597879392&amp;guid=5f3f545dbb3ff4663a089b54ee9e13de&amp;type=3#ClaimReward" />
+    <ui:VisualElement name="container" style="flex-grow: 1; margin-top: 16px; margin-right: 16px; margin-bottom: 16px; margin-left: 16px; padding-top: 12px; padding-right: 12px; padding-bottom: 12px; padding-left: 12px; border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-right-radius: 8px; border-bottom-left-radius: 8px;">
+        <ui:VisualElement name="image" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/AmataWorld/UI/dall-e-burger-and-sushis.png?fileID=2800000&amp;guid=1b374c77e6268439a93f46500442403d&amp;type=3#dall-e-burger-and-sushis&apos;); -unity-background-scale-mode: scale-and-crop; margin-top: 12px; margin-right: 12px; margin-bottom: 12px; margin-left: 12px;" />
+        <ui:Label tabindex="-1" text="Congratulations for completing all the challenges. Here is your reward, you earned it." display-tooltip-when-elided="true" style="background-color: rgba(0, 0, 0, 0); font-size: 9px; white-space: normal; -unity-text-align: upper-center; color: rgb(255, 255, 255);" />
+    </ui:VisualElement>
+</ui:UXML>

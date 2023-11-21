@@ -8,6 +8,7 @@
   position: absolute;
   left: 50%;
   bottom: 12px;
+  background-color: white;
 }
 
 #main-button:disabled {

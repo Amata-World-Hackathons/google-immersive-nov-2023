@@ -1,4 +1,4 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/AmataWorld/Scene/Debugging/DebugBadgeButton.uss?fileID=7433441132597879392&amp;guid=811f6b96aa5974f2a8418f5bed77a924&amp;type=3#DebugBadgeButton" />
-    <ui:Button text="Button" display-tooltip-when-elided="true" name="debug-badge-button" />
+    <ui:Button display-tooltip-when-elided="true" name="debug-badge-button" style="background-image: url(&apos;project://database/Assets/UnityAssetStore/Clean%20Vector%20Icons/T_2_shield_eye_.png?fileID=2800000&amp;guid=7d772d845fa5ada41b501fc7ba13abe8&amp;type=3#T_2_shield_eye_&apos;);" />
 </ui:UXML>

@@ -29,12 +29,12 @@ namespace AmataWorld.Activities
                     if (!_target.isFlipped) _target.Flip();
                 });
 
-                source._sceneConfig.onTargetObject.AddListener(OnTargetObject);
+                source._sceneConfig.onFocusObject.AddListener(onFocusObject);
             }
 
             void OnDisable()
             {
-                source._sceneConfig.onTargetObject.RemoveListener(OnTargetObject);
+                source._sceneConfig.onFocusObject.RemoveListener(onFocusObject);
                 source._activeGroup.SetActive(false);
                 _actionButton = null;
 
@@ -42,9 +42,9 @@ namespace AmataWorld.Activities
                     source._matchTheTilesUI.rootVisualElement.style.display = DisplayStyle.None;
             }
 
-            void OnTargetObject(SceneInteractable interactable)
+            void onFocusObject(SceneInteractable interactable)
             {
-                if (interactable != null && interactable.target is MatchTheTilesTile tile && !tile.wasMatched)
+                if (interactable != null && interactable.target is MatchTheTilesTile tile && !tile.isFlipped && !tile.wasMatched)
                 {
                     _actionButton.style.visibility = Visibility.Visible;
                     _target = tile;

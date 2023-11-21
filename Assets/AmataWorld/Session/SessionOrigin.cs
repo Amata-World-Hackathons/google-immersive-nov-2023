@@ -86,10 +86,9 @@ namespace AmataWorld.Session
                 {
                     ShowDirections = new SceneTypes.Event.Types.ShowDirections
                     {
-                        Latitude = 51.50398354433733,
-                        Longitude = -0.019888003256870058,
+                        Latitude = 51.50403455601147,
+                        Longitude = -0.02005565121979416,
                     }
-
                 }
             };
             scene.Events.Add(ev2);
@@ -114,6 +113,7 @@ namespace AmataWorld.Session
                 {
                     ActivitySubject = new SceneTypes.Object.Types.ActivitySubject
                     {
+                        TriggersEventId = ev2.Id,
                         Type = new SceneTypes.Object.Types.ActivitySubject.Types.ActivityType
                         {
                             // CryptexPuzzle = new SceneTypes.Object.Types.ActivitySubject.Types.CryptexPuzzle
@@ -124,7 +124,7 @@ namespace AmataWorld.Session
                             // }
                             MatchTheTiles = new SceneTypes.Object.Types.ActivitySubject.Types.MatchTheTiles
                             {
-                                BoardSize = SceneTypes.Object.Types.ActivitySubject.Types.MatchTheTiles.Types.BoardSize.Four,
+                                BoardSize = 3,
                                 PhysicalBoardLengthMm = 800,
                             }
                         }
@@ -148,16 +148,29 @@ namespace AmataWorld.Session
 
             scene.Layers.Add(layer1);
 
-            _sceneCoordinator.LoadScene(scene);
+            _sceneConfig.onSceneEventTriggered.AddListener((ev) =>
+            {
+                if (ev.Type.VariantCase != SceneTypes.Event.Types.EventType.VariantOneofCase.ShowDirections) return;
 
-            StartCoroutine(TestTest(ev2));
+                _sceneCoordinator.SetRewardLocation(ev2.Type.ShowDirections.Latitude, ev2.Type.ShowDirections.Longitude, 80.0f);
+            });
+
+            StartCoroutine(AsyncInit(scene, ev2));
         }
 
-        IEnumerator TestTest(SceneTypes.Event ev)
+        IEnumerator AsyncInit(Protobuf.SceneDef.Scene scene, SceneTypes.Event ev)
         {
+            yield return new WaitForSeconds(2);
+            _sceneConfig.onNotification.Invoke("How to play: Complete each challenge to earn a reward at the end");
+
+            yield return new WaitForSeconds(3);
+            _sceneCoordinator.LoadScene(scene);
+
             yield return new WaitForSeconds(3);
 
-            _sceneConfig.onSceneEvent.Invoke(ev);
+            // _sceneConfig.onRewardEarned.Invoke();
+            // _sceneConfig.onNotification.Invoke("hello world");
+            // _sceneConfig.onSceneEventTriggered.Invoke(ev);
         }
 
         void OnDisable()

@@ -22,7 +22,6 @@ namespace AmataWorld.Scene.Debugging
 
         bool _expanded = false;
 
-        SceneInteractable _target;
         SceneInteractable _focused;
 
         void Awake()
@@ -32,14 +31,11 @@ namespace AmataWorld.Scene.Debugging
             _sceneConfig.onFocusObject.AddListener(OnFocusObject);
             OnFocusObject(_sceneConfig.sceneInteractions.currentFocus);
 
-            _sceneConfig.onTargetObject.AddListener(OnTargetObject);
-            OnTargetObject(_sceneConfig.sceneInteractions.currentTarget);
         }
 
         void OnDestroy()
         {
             _sceneConfig.onFocusObject.RemoveListener(OnFocusObject);
-            _sceneConfig.onTargetObject.RemoveListener(OnTargetObject);
         }
 
         void OnEnable()
@@ -80,7 +76,6 @@ namespace AmataWorld.Scene.Debugging
                 _stringBuilder.Clear();
 
                 _stringBuilder.Append(FormatAsHeader("Interactions"));
-                _stringBuilder.Append($"Target: {FormatObject(_target)}\n");
                 _stringBuilder.Append($"Focused: {FormatObject(_focused)}\n");
 
                 _stringBuilder.Append(SectionSeparator());
@@ -94,11 +89,6 @@ namespace AmataWorld.Scene.Debugging
         void OnFocusObject(SceneInteractable interactable)
         {
             _focused = interactable;
-        }
-
-        void OnTargetObject(SceneInteractable interactable)
-        {
-            _target = interactable;
         }
 
         string FormatObject(MonoBehaviour component)

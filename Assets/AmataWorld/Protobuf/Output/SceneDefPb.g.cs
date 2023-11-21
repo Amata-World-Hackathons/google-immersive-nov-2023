@@ -27,7 +27,7 @@ namespace AmataWorld.Protobuf.SceneDef {
             "CkdhbWF0YV93b3JsZF9hcHAvdW5pdHkvQVdMZW5zL0Fzc2V0cy9BbWF0YVdv",
             "cmxkL1Byb3RvYnVmL3NjZW5lX2RlZi5wcm90bxIeYW1hdGFfd29ybGQucHJv",
             "dG9idWYuc2NlbmVfZGVmGhtnb29nbGUvcHJvdG9idWYvZW1wdHkucHJvdG8i",
-            "hCYKBVNjZW5lEgoKAmlkGAEgASgJEjsKBmxheWVycxgCIAMoCzIrLmFtYXRh",
+            "vSUKBVNjZW5lEgoKAmlkGAEgASgJEjsKBmxheWVycxgCIAMoCzIrLmFtYXRh",
             "X3dvcmxkLnByb3RvYnVmLnNjZW5lX2RlZi5TY2VuZS5MYXllchI9CgdhbmNo",
             "b3JzGAMgAygLMiwuYW1hdGFfd29ybGQucHJvdG9idWYuc2NlbmVfZGVmLlNj",
             "ZW5lLkFuY2hvchI7CgZldmVudHMYBCADKAsyKy5hbWF0YV93b3JsZC5wcm90",
@@ -92,7 +92,7 @@ namespace AmataWorld.Protobuf.SceneDef {
             "aXJlY3Rpb25zEhAKCGxhdGl0dWRlGAEgASgBEhEKCWxvbmdpdHVkZRgCIAEo",
             "ARp5ChFPYmplY3RBcnJhbmdlbWVudBIKCgJpZBgBIAEoDRIRCglhbmNob3Jf",
             "aWQYAiABKA0SRQoEdHlwZRgDIAEoCzI3LmFtYXRhX3dvcmxkLnByb3RvYnVm",
-            "LnNjZW5lX2RlZi5TY2VuZS5PYmplY3QuT2JqZWN0VHlwZRrTDQoGT2JqZWN0",
+            "LnNjZW5lX2RlZi5TY2VuZS5PYmplY3QuT2JqZWN0VHlwZRqMDQoGT2JqZWN0",
             "EgoKAmlkGAEgASgNEhEKCWFuY2hvcl9pZBgCIAEoDRJCCgl0cmFuc2Zvcm0Y",
             "AyABKAsyLy5hbWF0YV93b3JsZC5wcm90b2J1Zi5zY2VuZV9kZWYuU2NlbmUu",
             "VHJhbnNmb3JtEkUKBHR5cGUYBCABKAsyNy5hbWF0YV93b3JsZC5wcm90b2J1",
@@ -104,38 +104,36 @@ namespace AmataWorld.Protobuf.SceneDef {
             "CgZDdXN0b20SQQoFbW9kZWwYBCABKAsyMi5hbWF0YV93b3JsZC5wcm90b2J1",
             "Zi5zY2VuZV9kZWYuU2NlbmUuT2JqZWN0Lk1vZGVsElIKC2ludGVyYWN0aW9u",
             "GAUgASgLMjguYW1hdGFfd29ybGQucHJvdG9idWYuc2NlbmVfZGVmLlNjZW5l",
-            "Lk9iamVjdC5JbnRlcmFjdGlvbkgAiAEBQg4KDF9pbnRlcmFjdGlvbhr1BwoP",
+            "Lk9iamVjdC5JbnRlcmFjdGlvbkgAiAEBQg4KDF9pbnRlcmFjdGlvbhquBwoP",
             "QWN0aXZpdHlTdWJqZWN0ElcKBHR5cGUYASABKAsySS5hbWF0YV93b3JsZC5w",
             "cm90b2J1Zi5zY2VuZV9kZWYuU2NlbmUuT2JqZWN0LkFjdGl2aXR5U3ViamVj",
-            "dC5BY3Rpdml0eVR5cGUaxwIKDEFjdGl2aXR5VHlwZRJkCg5jcnlwdGV4X3B1",
-            "enpsZRgBIAEoCzJKLmFtYXRhX3dvcmxkLnByb3RvYnVmLnNjZW5lX2RlZi5T",
-            "Y2VuZS5PYmplY3QuQWN0aXZpdHlTdWJqZWN0LkNyeXB0ZXhQdXp6bGVIABJl",
-            "Cg9tYXRjaF90aGVfdGlsZXMYAiABKAsySi5hbWF0YV93b3JsZC5wcm90b2J1",
-            "Zi5zY2VuZV9kZWYuU2NlbmUuT2JqZWN0LkFjdGl2aXR5U3ViamVjdC5NYXRj",
-            "aFRoZVRpbGVzSAASXwoMd2hhY2tfYV9tb2xlGAMgASgLMkcuYW1hdGFfd29y",
-            "bGQucHJvdG9idWYuc2NlbmVfZGVmLlNjZW5lLk9iamVjdC5BY3Rpdml0eVN1",
-            "YmplY3QuV2hhY2tBTW9sZUgAQgkKB3ZhcmlhbnQa4wEKDUNyeXB0ZXhQdXp6",
-            "bGUSDAoEaGludBgBIAEoCRIOCgZhbnN3ZXIYAiABKAkSEAoIYWxwaGFiZXQY",
-            "AyABKAkSbQoNY3VzdG9tX2dseXBocxgEIAMoCzJWLmFtYXRhX3dvcmxkLnBy",
-            "b3RvYnVmLnNjZW5lX2RlZi5TY2VuZS5PYmplY3QuQWN0aXZpdHlTdWJqZWN0",
-            "LkNyeXB0ZXhQdXp6bGUuQ3VzdG9tR2x5cGgaMwoLQ3VzdG9tR2x5cGgSEQoJ",
-            "Y2hhcmFjdGVyGAEgASgJEhEKCWltYWdlX3VybBgCIAEoCRrKAgoNTWF0Y2hU",
-            "aGVUaWxlcxJoCgpib2FyZF9zaXplGAEgASgOMlQuYW1hdGFfd29ybGQucHJv",
-            "dG9idWYuc2NlbmVfZGVmLlNjZW5lLk9iamVjdC5BY3Rpdml0eVN1YmplY3Qu",
-            "TWF0Y2hUaGVUaWxlcy5Cb2FyZFNpemUSZAoGYXNzZXRzGAIgAygLMlQuYW1h",
-            "dGFfd29ybGQucHJvdG9idWYuc2NlbmVfZGVmLlNjZW5lLk9iamVjdC5BY3Rp",
-            "dml0eVN1YmplY3QuTWF0Y2hUaGVUaWxlcy5UaWxlQXNzZXQSIAoYcGh5c2lj",
-            "YWxfYm9hcmRfbGVuZ3RoX21tGAMgASgNGh4KCVRpbGVBc3NldBIRCgltb2Rl",
-            "bF91cmwYASABKAkiJwoJQm9hcmRTaXplEgcKA1RXTxAAEggKBEZPVVIQARIH",
-            "CgNTSVgQAhoMCgpXaGFja0FNb2xlGiQKBU1vZGVsEhMKCW1vZGVsX3VybBgB",
-            "IAEoCUgAQgYKBGRhdGEakwEKC0ludGVyYWN0aW9uEk8KBWZvY3VzGAEgASgL",
-            "Mj4uYW1hdGFfd29ybGQucHJvdG9idWYuc2NlbmVfZGVmLlNjZW5lLk9iamVj",
-            "dC5JbnRlcmFjdGlvbi5Gb2N1c0gAGisKBUZvY3VzEhUKCGV2ZW50X2lkGAEg",
-            "ASgNSACIAQFCCwoJX2V2ZW50X2lkQgYKBHR5cGUangEKCVRyYW5zZm9ybRIN",
-            "CgVwb3NfeBgBIAEoAhINCgVwb3NfeRgCIAEoAhINCgVwb3NfehgDIAEoAhIP",
-            "CgdldWxlcl94GAQgASgCEg8KB2V1bGVyX3kYBSABKAISDwoHZXVsZXJfehgG",
-            "IAEoAhIPCgdzY2FsZV94GAcgASgCEg8KB3NjYWxlX3kYCCABKAISDwoHc2Nh",
-            "bGVfehgJIAEoAmIGcHJvdG8z"));
+            "dC5BY3Rpdml0eVR5cGUSGQoRdHJpZ2dlcnNfZXZlbnRfaWQYAiABKA0axwIK",
+            "DEFjdGl2aXR5VHlwZRJkCg5jcnlwdGV4X3B1enpsZRgBIAEoCzJKLmFtYXRh",
+            "X3dvcmxkLnByb3RvYnVmLnNjZW5lX2RlZi5TY2VuZS5PYmplY3QuQWN0aXZp",
+            "dHlTdWJqZWN0LkNyeXB0ZXhQdXp6bGVIABJlCg9tYXRjaF90aGVfdGlsZXMY",
+            "AiABKAsySi5hbWF0YV93b3JsZC5wcm90b2J1Zi5zY2VuZV9kZWYuU2NlbmUu",
+            "T2JqZWN0LkFjdGl2aXR5U3ViamVjdC5NYXRjaFRoZVRpbGVzSAASXwoMd2hh",
+            "Y2tfYV9tb2xlGAMgASgLMkcuYW1hdGFfd29ybGQucHJvdG9idWYuc2NlbmVf",
+            "ZGVmLlNjZW5lLk9iamVjdC5BY3Rpdml0eVN1YmplY3QuV2hhY2tBTW9sZUgA",
+            "QgkKB3ZhcmlhbnQa4wEKDUNyeXB0ZXhQdXp6bGUSDAoEaGludBgBIAEoCRIO",
+            "CgZhbnN3ZXIYAiABKAkSEAoIYWxwaGFiZXQYAyABKAkSbQoNY3VzdG9tX2ds",
+            "eXBocxgEIAMoCzJWLmFtYXRhX3dvcmxkLnByb3RvYnVmLnNjZW5lX2RlZi5T",
+            "Y2VuZS5PYmplY3QuQWN0aXZpdHlTdWJqZWN0LkNyeXB0ZXhQdXp6bGUuQ3Vz",
+            "dG9tR2x5cGgaMwoLQ3VzdG9tR2x5cGgSEQoJY2hhcmFjdGVyGAEgASgJEhEK",
+            "CWltYWdlX3VybBgCIAEoCRroAQoNTWF0Y2hUaGVUaWxlcxISCgpib2FyZF9z",
+            "aXplGAEgASgNEmQKBmFzc2V0cxgCIAMoCzJULmFtYXRhX3dvcmxkLnByb3Rv",
+            "YnVmLnNjZW5lX2RlZi5TY2VuZS5PYmplY3QuQWN0aXZpdHlTdWJqZWN0Lk1h",
+            "dGNoVGhlVGlsZXMuVGlsZUFzc2V0EiAKGHBoeXNpY2FsX2JvYXJkX2xlbmd0",
+            "aF9tbRgDIAEoDRIbChNudW1fYXNzZXRzX3RvX21hdGNoGAQgASgNGh4KCVRp",
+            "bGVBc3NldBIRCgltb2RlbF91cmwYASABKAkaDAoKV2hhY2tBTW9sZRokCgVN",
+            "b2RlbBITCgltb2RlbF91cmwYASABKAlIAEIGCgRkYXRhGpMBCgtJbnRlcmFj",
+            "dGlvbhJPCgVmb2N1cxgBIAEoCzI+LmFtYXRhX3dvcmxkLnByb3RvYnVmLnNj",
+            "ZW5lX2RlZi5TY2VuZS5PYmplY3QuSW50ZXJhY3Rpb24uRm9jdXNIABorCgVG",
+            "b2N1cxIVCghldmVudF9pZBgBIAEoDUgAiAEBQgsKCV9ldmVudF9pZEIGCgR0",
+            "eXBlGp4BCglUcmFuc2Zvcm0SDQoFcG9zX3gYASABKAISDQoFcG9zX3kYAiAB",
+            "KAISDQoFcG9zX3oYAyABKAISDwoHZXVsZXJfeBgEIAEoAhIPCgdldWxlcl95",
+            "GAUgASgCEg8KB2V1bGVyX3oYBiABKAISDwoHc2NhbGVfeBgHIAEoAhIPCgdz",
+            "Y2FsZV95GAggASgCEg8KB3NjYWxlX3oYCSABKAJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -152,9 +150,9 @@ namespace AmataWorld.Protobuf.SceneDef {
             new pbr::GeneratedClrTypeInfo(typeof(global::AmataWorld.Protobuf.SceneDef.Scene.Types.ObjectArrangement), global::AmataWorld.Protobuf.SceneDef.Scene.Types.ObjectArrangement.Parser, new[]{ "Id", "AnchorId", "Type" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object), global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Parser, new[]{ "Id", "AnchorId", "Transform", "Type" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ObjectType), global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ObjectType.Parser, new[]{ "Custom", "ActivitySubject" }, new[]{ "Variant" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.Custom), global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.Custom.Parser, new[]{ "Model", "Interaction" }, new[]{ "Interaction" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject), global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Parser, new[]{ "Type" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.ActivityType), global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.ActivityType.Parser, new[]{ "CryptexPuzzle", "MatchTheTiles", "WhackAMole" }, new[]{ "Variant" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject), global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Parser, new[]{ "Type", "TriggersEventId" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.ActivityType), global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.ActivityType.Parser, new[]{ "CryptexPuzzle", "MatchTheTiles", "WhackAMole" }, new[]{ "Variant" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.CryptexPuzzle), global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.CryptexPuzzle.Parser, new[]{ "Hint", "Answer", "Alphabet", "CustomGlyphs" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.CryptexPuzzle.Types.CustomGlyph), global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.CryptexPuzzle.Types.CustomGlyph.Parser, new[]{ "Character", "ImageUrl" }, null, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.MatchTheTiles), global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.MatchTheTiles.Parser, new[]{ "BoardSize", "Assets", "PhysicalBoardLengthMm" }, null, new[]{ typeof(global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.MatchTheTiles.Types.BoardSize) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.MatchTheTiles.Types.TileAsset), global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.MatchTheTiles.Types.TileAsset.Parser, new[]{ "ModelUrl" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.MatchTheTiles), global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.MatchTheTiles.Parser, new[]{ "BoardSize", "Assets", "PhysicalBoardLengthMm", "NumAssetsToMatch" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.MatchTheTiles.Types.TileAsset), global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.MatchTheTiles.Types.TileAsset.Parser, new[]{ "ModelUrl" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.WhackAMole), global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.WhackAMole.Parser, null, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.Model), global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.Model.Parser, new[]{ "ModelUrl" }, new[]{ "Data" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.Interaction), global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.Interaction.Parser, new[]{ "Focus" }, new[]{ "Type" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.Interaction.Types.Focus), global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.Interaction.Types.Focus.Parser, new[]{ "EventId" }, new[]{ "EventId" }, null, null, null)})}),
@@ -6081,6 +6079,7 @@ namespace AmataWorld.Protobuf.SceneDef {
             [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public ActivitySubject(ActivitySubject other) : this() {
               type_ = other.type_ != null ? other.type_.Clone() : null;
+              triggersEventId_ = other.triggersEventId_;
               _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
             }
 
@@ -6102,6 +6101,18 @@ namespace AmataWorld.Protobuf.SceneDef {
               }
             }
 
+            /// <summary>Field number for the "triggers_event_id" field.</summary>
+            public const int TriggersEventIdFieldNumber = 2;
+            private uint triggersEventId_;
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public uint TriggersEventId {
+              get { return triggersEventId_; }
+              set {
+                triggersEventId_ = value;
+              }
+            }
+
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
             [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public override bool Equals(object other) {
@@ -6118,6 +6129,7 @@ namespace AmataWorld.Protobuf.SceneDef {
                 return true;
               }
               if (!object.Equals(Type, other.Type)) return false;
+              if (TriggersEventId != other.TriggersEventId) return false;
               return Equals(_unknownFields, other._unknownFields);
             }
 
@@ -6126,6 +6138,7 @@ namespace AmataWorld.Protobuf.SceneDef {
             public override int GetHashCode() {
               int hash = 1;
               if (type_ != null) hash ^= Type.GetHashCode();
+              if (TriggersEventId != 0) hash ^= TriggersEventId.GetHashCode();
               if (_unknownFields != null) {
                 hash ^= _unknownFields.GetHashCode();
               }
@@ -6148,6 +6161,10 @@ namespace AmataWorld.Protobuf.SceneDef {
                 output.WriteRawTag(10);
                 output.WriteMessage(Type);
               }
+              if (TriggersEventId != 0) {
+                output.WriteRawTag(16);
+                output.WriteUInt32(TriggersEventId);
+              }
               if (_unknownFields != null) {
                 _unknownFields.WriteTo(output);
               }
@@ -6162,6 +6179,10 @@ namespace AmataWorld.Protobuf.SceneDef {
                 output.WriteRawTag(10);
                 output.WriteMessage(Type);
               }
+              if (TriggersEventId != 0) {
+                output.WriteRawTag(16);
+                output.WriteUInt32(TriggersEventId);
+              }
               if (_unknownFields != null) {
                 _unknownFields.WriteTo(ref output);
               }
@@ -6174,6 +6195,9 @@ namespace AmataWorld.Protobuf.SceneDef {
               int size = 0;
               if (type_ != null) {
                 size += 1 + pb::CodedOutputStream.ComputeMessageSize(Type);
+              }
+              if (TriggersEventId != 0) {
+                size += 1 + pb::CodedOutputStream.ComputeUInt32Size(TriggersEventId);
               }
               if (_unknownFields != null) {
                 size += _unknownFields.CalculateSize();
@@ -6192,6 +6216,9 @@ namespace AmataWorld.Protobuf.SceneDef {
                   Type = new global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.ActivityType();
                 }
                 Type.MergeFrom(other.Type);
+              }
+              if (other.TriggersEventId != 0) {
+                TriggersEventId = other.TriggersEventId;
               }
               _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
             }
@@ -6215,6 +6242,10 @@ namespace AmataWorld.Protobuf.SceneDef {
                     input.ReadMessage(Type);
                     break;
                   }
+                  case 16: {
+                    TriggersEventId = input.ReadUInt32();
+                    break;
+                  }
                 }
               }
             #endif
@@ -6235,6 +6266,10 @@ namespace AmataWorld.Protobuf.SceneDef {
                       Type = new global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.ActivityType();
                     }
                     input.ReadMessage(Type);
+                    break;
+                  }
+                  case 16: {
+                    TriggersEventId = input.ReadUInt32();
                     break;
                   }
                 }
@@ -7145,6 +7180,7 @@ namespace AmataWorld.Protobuf.SceneDef {
                   boardSize_ = other.boardSize_;
                   assets_ = other.assets_.Clone();
                   physicalBoardLengthMm_ = other.physicalBoardLengthMm_;
+                  numAssetsToMatch_ = other.numAssetsToMatch_;
                   _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
                 }
 
@@ -7156,10 +7192,10 @@ namespace AmataWorld.Protobuf.SceneDef {
 
                 /// <summary>Field number for the "board_size" field.</summary>
                 public const int BoardSizeFieldNumber = 1;
-                private global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.MatchTheTiles.Types.BoardSize boardSize_ = global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.MatchTheTiles.Types.BoardSize.Two;
+                private uint boardSize_;
                 [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
                 [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-                public global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.MatchTheTiles.Types.BoardSize BoardSize {
+                public uint BoardSize {
                   get { return boardSize_; }
                   set {
                     boardSize_ = value;
@@ -7189,6 +7225,18 @@ namespace AmataWorld.Protobuf.SceneDef {
                   }
                 }
 
+                /// <summary>Field number for the "num_assets_to_match" field.</summary>
+                public const int NumAssetsToMatchFieldNumber = 4;
+                private uint numAssetsToMatch_;
+                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+                public uint NumAssetsToMatch {
+                  get { return numAssetsToMatch_; }
+                  set {
+                    numAssetsToMatch_ = value;
+                  }
+                }
+
                 [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
                 [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
                 public override bool Equals(object other) {
@@ -7207,6 +7255,7 @@ namespace AmataWorld.Protobuf.SceneDef {
                   if (BoardSize != other.BoardSize) return false;
                   if(!assets_.Equals(other.assets_)) return false;
                   if (PhysicalBoardLengthMm != other.PhysicalBoardLengthMm) return false;
+                  if (NumAssetsToMatch != other.NumAssetsToMatch) return false;
                   return Equals(_unknownFields, other._unknownFields);
                 }
 
@@ -7214,9 +7263,10 @@ namespace AmataWorld.Protobuf.SceneDef {
                 [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
                 public override int GetHashCode() {
                   int hash = 1;
-                  if (BoardSize != global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.MatchTheTiles.Types.BoardSize.Two) hash ^= BoardSize.GetHashCode();
+                  if (BoardSize != 0) hash ^= BoardSize.GetHashCode();
                   hash ^= assets_.GetHashCode();
                   if (PhysicalBoardLengthMm != 0) hash ^= PhysicalBoardLengthMm.GetHashCode();
+                  if (NumAssetsToMatch != 0) hash ^= NumAssetsToMatch.GetHashCode();
                   if (_unknownFields != null) {
                     hash ^= _unknownFields.GetHashCode();
                   }
@@ -7235,14 +7285,18 @@ namespace AmataWorld.Protobuf.SceneDef {
                 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
                   output.WriteRawMessage(this);
                 #else
-                  if (BoardSize != global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.MatchTheTiles.Types.BoardSize.Two) {
+                  if (BoardSize != 0) {
                     output.WriteRawTag(8);
-                    output.WriteEnum((int) BoardSize);
+                    output.WriteUInt32(BoardSize);
                   }
                   assets_.WriteTo(output, _repeated_assets_codec);
                   if (PhysicalBoardLengthMm != 0) {
                     output.WriteRawTag(24);
                     output.WriteUInt32(PhysicalBoardLengthMm);
+                  }
+                  if (NumAssetsToMatch != 0) {
+                    output.WriteRawTag(32);
+                    output.WriteUInt32(NumAssetsToMatch);
                   }
                   if (_unknownFields != null) {
                     _unknownFields.WriteTo(output);
@@ -7254,14 +7308,18 @@ namespace AmataWorld.Protobuf.SceneDef {
                 [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
                 [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
                 void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-                  if (BoardSize != global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.MatchTheTiles.Types.BoardSize.Two) {
+                  if (BoardSize != 0) {
                     output.WriteRawTag(8);
-                    output.WriteEnum((int) BoardSize);
+                    output.WriteUInt32(BoardSize);
                   }
                   assets_.WriteTo(ref output, _repeated_assets_codec);
                   if (PhysicalBoardLengthMm != 0) {
                     output.WriteRawTag(24);
                     output.WriteUInt32(PhysicalBoardLengthMm);
+                  }
+                  if (NumAssetsToMatch != 0) {
+                    output.WriteRawTag(32);
+                    output.WriteUInt32(NumAssetsToMatch);
                   }
                   if (_unknownFields != null) {
                     _unknownFields.WriteTo(ref output);
@@ -7273,12 +7331,15 @@ namespace AmataWorld.Protobuf.SceneDef {
                 [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
                 public int CalculateSize() {
                   int size = 0;
-                  if (BoardSize != global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.MatchTheTiles.Types.BoardSize.Two) {
-                    size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) BoardSize);
+                  if (BoardSize != 0) {
+                    size += 1 + pb::CodedOutputStream.ComputeUInt32Size(BoardSize);
                   }
                   size += assets_.CalculateSize(_repeated_assets_codec);
                   if (PhysicalBoardLengthMm != 0) {
                     size += 1 + pb::CodedOutputStream.ComputeUInt32Size(PhysicalBoardLengthMm);
+                  }
+                  if (NumAssetsToMatch != 0) {
+                    size += 1 + pb::CodedOutputStream.ComputeUInt32Size(NumAssetsToMatch);
                   }
                   if (_unknownFields != null) {
                     size += _unknownFields.CalculateSize();
@@ -7292,12 +7353,15 @@ namespace AmataWorld.Protobuf.SceneDef {
                   if (other == null) {
                     return;
                   }
-                  if (other.BoardSize != global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.MatchTheTiles.Types.BoardSize.Two) {
+                  if (other.BoardSize != 0) {
                     BoardSize = other.BoardSize;
                   }
                   assets_.Add(other.assets_);
                   if (other.PhysicalBoardLengthMm != 0) {
                     PhysicalBoardLengthMm = other.PhysicalBoardLengthMm;
+                  }
+                  if (other.NumAssetsToMatch != 0) {
+                    NumAssetsToMatch = other.NumAssetsToMatch;
                   }
                   _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
                 }
@@ -7315,7 +7379,7 @@ namespace AmataWorld.Protobuf.SceneDef {
                         _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                         break;
                       case 8: {
-                        BoardSize = (global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.MatchTheTiles.Types.BoardSize) input.ReadEnum();
+                        BoardSize = input.ReadUInt32();
                         break;
                       }
                       case 18: {
@@ -7324,6 +7388,10 @@ namespace AmataWorld.Protobuf.SceneDef {
                       }
                       case 24: {
                         PhysicalBoardLengthMm = input.ReadUInt32();
+                        break;
+                      }
+                      case 32: {
+                        NumAssetsToMatch = input.ReadUInt32();
                         break;
                       }
                     }
@@ -7342,7 +7410,7 @@ namespace AmataWorld.Protobuf.SceneDef {
                         _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                         break;
                       case 8: {
-                        BoardSize = (global::AmataWorld.Protobuf.SceneDef.Scene.Types.Object.Types.ActivitySubject.Types.MatchTheTiles.Types.BoardSize) input.ReadEnum();
+                        BoardSize = input.ReadUInt32();
                         break;
                       }
                       case 18: {
@@ -7351,6 +7419,10 @@ namespace AmataWorld.Protobuf.SceneDef {
                       }
                       case 24: {
                         PhysicalBoardLengthMm = input.ReadUInt32();
+                        break;
+                      }
+                      case 32: {
+                        NumAssetsToMatch = input.ReadUInt32();
                         break;
                       }
                     }
@@ -7363,12 +7435,6 @@ namespace AmataWorld.Protobuf.SceneDef {
                 [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
                 [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
                 public static partial class Types {
-                  public enum BoardSize {
-                    [pbr::OriginalName("TWO")] Two = 0,
-                    [pbr::OriginalName("FOUR")] Four = 1,
-                    [pbr::OriginalName("SIX")] Six = 2,
-                  }
-
                   public sealed partial class TileAsset : pb::IMessage<TileAsset>
                   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
                       , pb::IBufferMessage

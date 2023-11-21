@@ -121,7 +121,7 @@ namespace AmataWorld.Features.VPS
         {
             var geoPose = earthManager.CameraGeospatialPose;
 
-            return "EarthState = " + earthManager.EarthState.ToString() + "\nEarthTrackingState = " + earthManager.EarthTrackingState.ToString() + "\nLatitude = " + geoPose.Latitude + "\nLongitude = " + geoPose.Longitude + "\nAltitude = " + geoPose.Altitude + "\nHeading Accuracy = " + geoPose.HeadingAccuracy + "\nHorizontal Accuracy = " + geoPose.HorizontalAccuracy + "\nVertical Accuracy = " + geoPose.VerticalAccuracy + "\nVPS Availability = " + (VpsAvailability != null ? VpsAvailability.Result.ToString() : "N/A");
+            return "EarthState = " + earthManager.EarthState.ToString() + "\nEarthTrackingState = " + earthManager.EarthTrackingState.ToString() + "\nLatitude = " + geoPose.Latitude + "\nLongitude = " + geoPose.Longitude + "\nAltitude = " + geoPose.Altitude + "\nOrientation Yaw Accuracy = " + geoPose.OrientationYawAccuracy + "\nHorizontal Accuracy = " + geoPose.HorizontalAccuracy + "\nVertical Accuracy = " + geoPose.VerticalAccuracy + "\nVPS Availability = " + (VpsAvailability != null ? VpsAvailability.Result.ToString() : "N/A");
         }
     }
 }

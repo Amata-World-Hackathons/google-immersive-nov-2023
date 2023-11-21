@@ -3,6 +3,7 @@ using System.Collections;
 using AmataWorld.Activities;
 using AmataWorld.Logging;
 using UnityEngine;
+using Google.XR.ARCoreExtensions;
 
 namespace AmataWorld.Scene
 {
@@ -29,6 +30,8 @@ namespace AmataWorld.Scene
     {
         [SerializeField] SceneConfig _sceneConfig;
 
+        Protobuf.SceneDef.Scene _importedScene;
+
         Dictionary<uint, SceneAnchor> _anchorsDict = new Dictionary<uint, SceneAnchor>();
 
         Dictionary<uint, SceneObject> _sceneObjectsDict = new Dictionary<uint, SceneObject>();
@@ -38,6 +41,13 @@ namespace AmataWorld.Scene
         void Awake()
         {
             _sceneConfig.onActionObject.AddListener(OnActionObject);
+            _sceneConfig.onSceneEventTriggerIntent.AddListener(onSceneEventTriggerIntent);
+        }
+
+        void OnDestroy()
+        {
+            _sceneConfig.onSceneEventTriggerIntent.RemoveListener(onSceneEventTriggerIntent);
+            _sceneConfig.onActionObject.RemoveListener(OnActionObject);
         }
 
         public void Init()
@@ -46,6 +56,18 @@ namespace AmataWorld.Scene
 
         public void Clear()
         {
+        }
+
+        void onSceneEventTriggerIntent(uint id)
+        {
+            foreach (var ev in _importedScene.Events)
+            {
+                if (ev.Id == id)
+                {
+                    _sceneConfig.onSceneEventTriggered.Invoke(ev);
+                    return;
+                }
+            }
         }
 
         void OnActionObject(SceneInteractable sceneInteractable)
@@ -133,7 +155,7 @@ namespace AmataWorld.Scene
                                 {
                                     var matchTheTilesObj = Instantiate(_sceneConfig.matchTheTilesPrefab, gameObject.transform);
                                     var matchTheTiles = matchTheTilesObj.GetComponent<Activities.MatchTheTiles>();
-                                    matchTheTiles.Init(obj.Type.ActivitySubject.Type.MatchTheTiles, _sceneConfig);
+                                    matchTheTiles.Init(obj.Type.ActivitySubject, _sceneConfig);
 
                                     activity = matchTheTiles;
 
@@ -208,6 +230,8 @@ namespace AmataWorld.Scene
         {
             Clear();
 
+            _importedScene = scene;
+
             foreach (var anchorData in scene.Anchors)
             {
                 SceneAnchor sceneAnchor;
@@ -224,6 +248,36 @@ namespace AmataWorld.Scene
                     _sceneLayersDict.Add(slayer.id, slayer);
                 else
                     this.LogError($"failed to load SceneLayer with ID = {layer.Id}");
+            }
+        }
+
+        ARGeospatialAnchor _rewardAnchor;
+
+        public void SetRewardLocation(double lat, double lng, float radius)
+        {
+            StartCoroutine(WatchLocation(lat, lng, radius));
+        }
+
+        IEnumerator WatchLocation(double lat, double lng, float radius)
+        {
+            yield return _sceneConfig.vpsProvider.waitUntilReady;
+
+            _rewardAnchor = _sceneConfig.vpsProvider.anchorManager.AddAnchor(lat, lng, 50.0f, Quaternion.identity);
+
+            while (true)
+            {
+                yield return new WaitForSeconds(2.0f);
+                var pose = _sceneConfig.poseDriver;
+
+                var diff = _rewardAnchor.pose.position - pose.transform.position;
+
+                if (diff.magnitude < radius)
+                {
+                    _sceneConfig.onRewardEarned.Invoke();
+                    yield return new WaitForSeconds(0.5f);
+                    _sceneConfig.onNotification.Invoke("Well done! You found the hidden treasure");
+                    yield break;
+                }
             }
         }
     }

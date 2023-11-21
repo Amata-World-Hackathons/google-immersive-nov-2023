@@ -164,6 +164,7 @@ message Scene {
 
     message ActivitySubject {
       ActivityType type = 1;
+      uint32 triggers_event_id = 2;
 
       message ActivityType {
         oneof variant {

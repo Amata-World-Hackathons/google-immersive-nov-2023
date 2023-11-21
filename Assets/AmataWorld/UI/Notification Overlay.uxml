@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/AmataWorld/UI/NotificationOverlay.uss?fileID=7433441132597879392&amp;guid=42328cd2d100f4193b0502369a156346&amp;type=3#NotificationOverlay" />
+    <ui:Label tabindex="-1" text="Test label that can go reallTest label that can go reallTest label that can go reallTest label that can go reallTest label that can go reallTest label that can go reall" display-tooltip-when-elided="true" name="notification-text" enable-rich-text="true" style="white-space: normal;" />
+</ui:UXML>

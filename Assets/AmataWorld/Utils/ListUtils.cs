@@ -1,13 +1,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using Unity.Mathematics;
-using Unity.VisualScripting;
+using UnityEngine;
 
 namespace AmataWorld.Utils
 {
     public static class ListUtils
     {
-        private static Random rng = new Random(0x6E624EB7u);
+        private static Unity.Mathematics.Random rng = new Unity.Mathematics.Random(0x6E624EB7u);
 
         public static (T, int) Sample<T>(IList<T> list)
         {
@@ -29,7 +29,8 @@ namespace AmataWorld.Utils
 
                 foreach (var item in clone)
                 {
-                    if (clone.Count < count) results.Add(item);
+                    if (results.Count < count) results.Add(item);
+                    else break;
                 }
             }
 

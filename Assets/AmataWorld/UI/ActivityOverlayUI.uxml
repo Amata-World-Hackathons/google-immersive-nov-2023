@@ -1,4 +1,4 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/AmataWorld/UI/ActivityOverlayUI.uss?fileID=7433441132597879392&amp;guid=6ccc9a4493dea47cda2d224aebd42ee8&amp;type=3#ActivityOverlayUI" />
-    <ui:Button text="Button" display-tooltip-when-elided="true" name="close-activity-button" />
+    <ui:Button display-tooltip-when-elided="true" name="close-activity-button" style="background-image: url(&apos;project://database/Assets/UnityAssetStore/Clean%20Vector%20Icons/T_11_arrow_rounded_left_.png?fileID=2800000&amp;guid=c342a02c1ec59764ab8c5f2892c2928b&amp;type=3#T_11_arrow_rounded_left_&apos;);" />
 </ui:UXML>

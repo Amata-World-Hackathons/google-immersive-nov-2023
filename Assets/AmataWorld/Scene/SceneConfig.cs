@@ -4,6 +4,7 @@ using AmataWorld.Features.Synthesis;
 using UnityEngine.Events;
 using UnityEngine.SpatialTracking;
 using AmataWorld.Activities;
+using UnityEditor.Rendering;
 
 namespace AmataWorld.Scene
 {
@@ -34,16 +35,15 @@ namespace AmataWorld.Scene
         /// </summary>
         [field: Header("Events")]
         [field: SerializeField] public UnityEvent<SceneInteractable> onFocusObject { get; private set; }
-        /// <summary>
-        /// Invoked when the player looks at a new interactable object
-        /// </summary>
-        [field: SerializeField] public UnityEvent<SceneInteractable> onTargetObject { get; private set; }
         [field: SerializeField] public UnityEvent<SceneInteractable> onActionObject { get; private set; }
         [field: SerializeField] public UnityEvent<IActivity> onActivityStarted { get; private set; }
         [field: SerializeField] public UnityEvent<IActivity, bool> onActivityEnded { get; private set; }
         /// <summary>
         /// Called when a Scene event has been triggered
         /// </summary>
-        [field: SerializeField] public UnityEvent<Protobuf.SceneDef.Scene.Types.Event> onSceneEvent { get; private set; }
+        [field: SerializeField] public UnityEvent<Protobuf.SceneDef.Scene.Types.Event> onSceneEventTriggered { get; private set; }
+        [field: SerializeField] public UnityEvent<uint> onSceneEventTriggerIntent { get; private set; }
+        [field: SerializeField] public UnityEvent<string> onNotification { get; private set; }
+        [field: SerializeField] public UnityEvent onRewardEarned { get; private set; }
     }
 }
